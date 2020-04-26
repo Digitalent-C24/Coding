@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Roboto Slab'sans-serif;
+}
+
+/*navbar*/
+nav{
+    display: flex;
+    background-color: rgb(6, 65, 65);
+    justify-content: space-around;
+    /* padding: 20px 0; */
+    color: rgb(130, 179, 179) ;
+    height: 50px;
+    align-items: center;
+}
+nav .logo{
+    font-family:'Josefin Sans', sans-serif; ;
+    letter-spacing: 3px;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    width: 40%;
+    justify-content: space-between;
+}
+
+
+nav ul li a{
+    color:  rgb(250, 252, 252);
+    text-decoration: none;
+    font-size: 0.8em;
+}
+
+nav ul li a:hover{
+    color: cornsilk;
+}
+/* Hamburger Menu */
+.menu-toggle {
+    display: flex;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+}
+/* hamburger menu animation */
+
+.menu-toggle span:nth-child(2){
+background-color: crimson;
+
+}
+.menu-toggle span{
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color:rgb(130, 179, 179)  ;
+}
+
+.menu-toggle input{
+    position: absolute;
+    width: 40px;
+    height: 28px;
+    left: -5px;
+    top: -5px;
+    opacity: 0;
+    cursor: pointer;
+}
+
+
+/* Responsive Breakpoint */
+
+/* ukuran tablet */
+@media screen and (max-width: 768px){
+    nav ul {
+        width: 50%;
+    }
+}
+
+/* ukuran mobile */
+@media screen and (max-width: 576px){
+    nav ul {
+        width: none;
+    }
+}
